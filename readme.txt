@@ -1,10 +1,9 @@
 === Simple Course Creator Front Display ===
 Contributors: sdavis2702
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=52HQDSEUA542S
 Tags: customizer, series, course, lesson, taxonomy, sdavis2702
 Requires at least: 3.8
-Tested up to: 5.3
-Stable tag: 1.0.5
+Tested up to: 6.9.1
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,9 +11,9 @@ Outputs the course name on each post listed on a blog home, archive page, or sea
 
 == Description ==
 
-This plugin must be used with [Simple Course Creator](http://wordpress.org/plugins/simple-course-creator/).
+This plugin must be used with [Simple Course Creator](https://github.com/seanchdavis/simple-course-creator/).
 
-By default, the only way to know that a post is part of a Simple Course Creator course is by viewing the individual post page or another post in the same course. This add-on allows you to see if a post is part of a course in "byline" fashion. The name of the course a post is part of can be seen from the blog home, archive, or search results.
+By default, the only way to know that a post is part of a Simple Course Creator course is by viewing the individual post or another post in the same course. This add-on allows you to see if a post is part of a course in "byline" fashion. The name of the course that a post is part of can be seen from the blog home, archive, or search results.
 
 == Installation ==
 
@@ -22,7 +21,7 @@ By default, the only way to know that a post is part of a Simple Course Creator 
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. [Optional] Customizer options under the 'Appearance -> Customizer' menu
 
-Follow Simple Course Creator Post Meta on [Github](https://github.com/sdavismedia/simple-course-creator-front-display)
+Follow Simple Course Creator Post Meta on [Github](https://github.com/seanchdavis/simple-course-creator-front-display)
 
 == Frequently Asked Questions ==
 
@@ -43,6 +42,10 @@ The Front Display customizer options will be merged with SCC Customizer.
 1. customizer settings and output
 
 == Changelog ==
+
+= 1.0.6 =
+* Fixed: filter the_excerpt instead of the_content on blog post feeds
+* improved: hardened conditional checks before outputting course reference
 
 = 1.0.5 =
 * Added: allow front display message to link directly to Course archive

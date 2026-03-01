@@ -1,14 +1,14 @@
 <?php
 /**
  * Plugin Name: Simple Course Creator - Front Display
- * Plugin URI: https://github.com/SDavisMedia/simple-course-creator-front-display
+ * Plugin URI: https://github.com/seanchdavis/simple-course-creator-front-display
  * Description: On the blog home, archives, and search results, indicate that posts are part of a course.
- * Version: 1.0.5
+ * Version: 1.0.6
  * Author: Sean Davis
- * Author URI: https://github.com/SDavisMedia/
+ * Author URI: https://github.com/seanchdavis/
  * License: GPL2
  * Requires at least: 3.8
- * Tested up to: 5.3
+ * Tested up to: 6.9.1
  * Text Domain: scc_front_display
  * Domain Path: /languages/
  *
