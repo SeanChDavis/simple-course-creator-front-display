@@ -16,7 +16,7 @@ class SCCFD_Display_Course {
 	public function __construct() {
 
 		// display course on blog, archives, and search
-		add_filter( 'the_content', array( $this, 'scc_front_display' ) );
+		add_filter( 'the_excerpt', array( $this, 'scc_front_display' ) );
 	}
 
 
@@ -33,7 +33,7 @@ class SCCFD_Display_Course {
 		// what's the name of the course?
 		$course_info = get_the_term_list( $post->ID, 'course', $course_leading_text . ' ', ', ', ' ' . $course_trailing_text );
 
-		// only display the course output if it exists and it's the
+		// only display the course output if it exists, and it's the
 		// blog home, archive, or search results
 		if (
 			( is_home() || is_search() || ( is_archive() && ! is_tax( 'course' ) ) )
