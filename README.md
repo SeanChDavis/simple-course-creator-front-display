@@ -1,3 +1,7 @@
+> **This plugin is retired.** Its functionality is now built into [Simple Course Creator v2.0.0](https://github.com/SeanChDavis/simple-course-creator). Deactivate and delete this plugin, then upgrade SCC to v2.0.0. Your settings carry over automatically. This repository is archived.
+
+---
+
 Simple Course Creator Front Display
 =====================
 

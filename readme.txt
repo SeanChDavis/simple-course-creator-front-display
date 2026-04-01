@@ -1,3 +1,5 @@
+**RETIRED:** This plugin's functionality is now built into Simple Course Creator v2.0.0. Deactivate and delete this plugin, then upgrade SCC to v2.0.0. Your settings carry over automatically. https://github.com/SeanChDavis/simple-course-creator
+
 === Simple Course Creator Front Display ===
 Contributors: sdavis2702
 Tags: customizer, series, course, lesson, taxonomy, sdavis2702
