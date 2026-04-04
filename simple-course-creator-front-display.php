@@ -34,49 +34,7 @@
 // No accessing this file directly
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-// make sure SCC is activated
-include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-if ( is_plugin_active( 'simple-course-creator/simple-course-creator.php' ) ) :
-
-	/**
-	 * primary class for Simple Course Creator Front Display
-	 *
-	 * @since 1.0.0
-	 */
-	class Simple_Course_Creator_Front_Display {
-
-
-		/**
-		 * constructor for Simple_Course_Creator_Front_Display class
-		 */
-		public function __construct() {
-
-			// define plugin directory
-			define( 'SCCFD_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
-
-			// load text domain
-			add_action( 'init', array( $this, 'load_textdomain' ) );
-
-			// require additional plugin files
-			$this->includes();
-		}
-
-
-		/**
-		 * load SCC Front Display text domain
-		 */
-		public function load_textdomain() {
-			load_plugin_textdomain( 'scc_front_display', false, SCCFD_DIR . 'languages/' );
-		}
-
-
-		/**
-		 * require additional plugin files
-		 */
-		private function includes() {
-			require_once( SCCFD_DIR . 'includes/admin/class-scc-front-display-customizer.php' );
-			require_once( SCCFD_DIR . 'includes/display/class-sccfd-display-course.php' );
-		}
-	}
-	new Simple_Course_Creator_Front_Display();
-endif; // end check to see if SCC is activated
+// Retired: functionality is built into Simple Course Creator 2.0.0.
+if ( defined( 'SCC_VERSION' ) && version_compare( SCC_VERSION, '2.0.0', '>=' ) ) {
+	return;
+}
